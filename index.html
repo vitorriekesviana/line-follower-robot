@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project: Line-Following Robot</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Swiper.js CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* Dark Blue-Gray */
+            color: #E5E7EB; /* Light Gray */
+        }
+        .brand-gradient {
+            background: linear-gradient(to right, #f59e0b, #ef4444);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        /* Custom Swiper Styles */
+        .swiper-button-next, .swiper-button-prev {
+            color: #ffffff;
+            background-color: rgba(0, 0, 0, 0.3);
+            border-radius: 50%;
+            width: 44px;
+            height: 44px;
+            transition: background-color 0.3s ease;
+        }
+        .swiper-button-next:hover, .swiper-button-prev:hover {
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+        .swiper-button-next::after, .swiper-button-prev::after {
+            font-size: 24px;
+        }
+        .swiper-pagination { display: none; }
+        .swiper-slide video {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="bg-gray-800/50 shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <a href="https://vitorriekesviana.github.io" class="text-lg font-semibold hover:text-blue-400 transition-colors duration-300">&larr; Back to Main Portfolio</a>
+        </div>
+    </header>
+
+    <main class="py-16">
+        <div class="container mx-auto px-6">
+
+            <section class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight">"Gary the Snail" Line-Following Robot</h1>
+                <p class="text-xl mt-2 brand-gradient">🏆 1st Place Award-Winning Project 🏆</p>
+            </section>
+            
+            <section class="max-w-6xl mx-auto mt-16">
+                <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+                    <!-- Image on the left -->
+                    <div class="md:w-1/2 w-full">
+                        <div class="p-1 rounded-lg overflow-hidden shadow-2xl bg-gray-800">
+                            <img src="your_main_gary_image.jpg" alt="Gary the Snail Robot" class="w-full h-auto object-cover rounded-md">
+                        </div>
+                    </div>
+                    <!-- Overview on the right -->
+                    <div class="md:w-1/2 w-full">
+                        <h2 class="text-3xl font-bold mb-4">Project Overview</h2>
+                        <p class="text-lg text-gray-300 leading-relaxed">
+                            As my first project at the University of South Florida, I served as the Hardware Lead for a team of five students in the Foundations of Engineering Laboratory. Our mission was to design and build an engaging line-following robot to introduce robotics concepts to over 100 K-12 students. We created "Gary the Snail," a robot with a custom 3D printed chassis. The project was a massive success, winning <strong class="text-yellow-400 font-semibold">1st place out of 500 competing projects</strong>.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="max-w-5xl mx-auto">
+                 <div class="mt-16">
+                    <h2 class="text-3xl font-bold mb-8 text-center">Video Demonstration</h2>
+                    <div class="max-w-3xl mx-auto bg-gray-900/50 rounded-lg p-4">
+                        <video class="rounded-lg shadow-lg w-full" autoplay loop muted playsinline>
+                            <source src="your_video_name.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+
+                <div class="mt-16">
+                    <h2 class="text-3xl font-bold mb-8 text-center">Project Breakdown</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        
+                        <div class="bg-gray-800/50 p-6 rounded-lg flex items-start gap-4 transition-all hover:bg-gray-800/70">
+                            <div class="flex-shrink-0 text-blue-400"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg></div>
+                            <div>
+                                <h3 class="text-xl font-bold">Hardware & 3D Printing</h3>
+                                <p class="text-gray-400 mt-1">As Hardware Lead, I managed the integration of all electronic components onto a custom chassis, which was topped with a 3D printed shell of "Gary" designed by our team.</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-gray-800/50 p-6 rounded-lg flex items-start gap-4 transition-all hover:bg-gray-800/70">
+                             <div class="flex-shrink-0 text-blue-400"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg></div>
+                            <div>
+                                <h3 class="text-xl font-bold">Software & Control</h3>
+                                <p class="text-gray-400 mt-1">The robot's movement was programmed in C++ on an Arduino. It utilized two IR sensors to detect and follow a black line path autonomously.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-16">
+                    <h2 class="text-3xl font-bold mb-8 text-center">Project Gallery</h2>
+                    <!-- Swiper Carousel -->
+                    <div class="swiper-container mySwiper relative bg-gray-900/50 rounded-lg p-4">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="your_image_1.jpg" alt="Photo of the robot" class="rounded-lg shadow-lg w-full max-h-[32rem] object-contain">
+                                <p class="text-center text-sm mt-2 text-gray-400">The final assembled 'Gary the Snail' robot.</p>
+                            </div>
+                            <div class="swiper-slide">
+                               <img src="your_image_2.jpg" alt="Team working on the robot" class="rounded-lg shadow-lg w-full max-h-[32rem] object-contain">
+                               <p class="text-center text-sm mt-2 text-gray-400">Our team testing the chassis and electronics.</p>
+                            </div>
+                             <div class="swiper-slide">
+                               <img src="your_image_3.jpg" alt="3D model of Gary" class="rounded-lg shadow-lg w-full max-h-[32rem] object-contain">
+                               <p class="text-center text-sm mt-2 text-gray-400">The 3D model of the shell designed in TinkerCad.</p>
+                            </div>
+                        </div>
+                        <!-- Add Navigation -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+
+                <div class="mt-16">
+                    <h2 class="text-3xl font-bold mb-4 text-center">Technologies Used</h2>
+                    <div class="flex flex-wrap gap-4 justify-center">
+                        <span class="bg-purple-900/50 text-purple-300 text-sm font-semibold px-3 py-1 rounded-full">C++</span>
+                        <span class="bg-blue-900/50 text-blue-300 text-sm font-semibold px-3 py-1 rounded-full">Arduino</span>
+                        <span class="bg-green-900/50 text-green-300 text-sm font-semibold px-3 py-1 rounded-full">3D Printing</span>
+                        <span class="bg-red-900/50 text-red-300 text-sm font-semibold px-3 py-1 rounded-full">IR Sensors</span>
+                        <span class="bg-yellow-900/50 text-yellow-300 text-sm font-semibold px-3 py-1 rounded-full">TinkerCad</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="py-6 mt-12 border-t border-gray-800">
+        <div class="container mx-auto px-6 text-center text-gray-500">
+            <p>&copy; 2025 Vitor Riekes Viana. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- Swiper.js JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+</body>
+</html>
