@@ -62,50 +62,52 @@
             
             <section class="max-w-6xl mx-auto mt-16">
                 <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
-                    <!-- Image on the left -->
+                    <!-- Video Demonstration on the left -->
                     <div class="md:w-1/2 w-full">
-                        <div class="p-1 rounded-lg overflow-hidden shadow-2xl bg-gray-800">
-                            <img src="Completed_Robot_Assembled.png" alt="Gary the Snail Robot" class="w-full h-auto object-cover rounded-md">
+                        <h2 class="text-3xl font-bold mb-4 text-center md:text-left">Video Demonstration</h2>
+                        <div class="bg-gray-900/50 rounded-lg p-2">
+                            <video class="rounded-lg shadow-lg w-full" autoplay loop muted playsinline>
+                                <source src="your_video_name.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
                     </div>
                     <!-- Overview on the right -->
                     <div class="md:w-1/2 w-full">
                         <h2 class="text-3xl font-bold mb-4">Project Overview</h2>
                         <p class="text-lg text-gray-300 leading-relaxed">
-                            As my first project at the University of South Florida, I served as the Hardware Lead for a team of five students in the Foundations of Engineering Laboratory. Our mission was to design and build an engaging line-following robot to introduce robotics concepts to over 100 K-12 students. We created "Gary the Snail," a robot with a custom 3D printed chassis. The project was a massive success, winning <strong>1st place out of 500 competing projects</strong>.
+                            As my first project at the University of South Florida, I served as the <strong class="font-semibold">Hardware Lead</strong> for a team of five students in the Foundations of Engineering Laboratory. Our mission was to design and build an engaging line-following robot to introduce robotics concepts to over 100 K-12 students. We created "Gary the Snail," a robot with a custom 3D printed chassis. The project was a massive success, winning <strong class="text-yellow-400 font-semibold">1st place out of 500 competing projects</strong>.
                         </p>
                     </div>
                 </div>
             </section>
 
-            <section class="max-w-5xl mx-auto">
-                 <div class="mt-16">
-                    <h2 class="text-3xl font-bold mb-8 text-center">Video Demonstration</h2>
-                    <div class="max-w-3xl mx-auto bg-gray-900/50 rounded-lg p-4">
-                        <video class="rounded-lg shadow-lg w-full" autoplay loop muted playsinline>
-                            <source src="your_video_name.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                </div>
-
+            <section class="max-w-6xl mx-auto">
                 <div class="mt-16">
                     <h2 class="text-3xl font-bold mb-8 text-center">Project Breakdown</h2>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                         
-                        <div class="bg-gray-800/50 p-6 rounded-lg flex items-start gap-4 transition-all hover:bg-gray-800/70">
+                        <div class="bg-gray-800/50 p-6 rounded-lg flex flex-col gap-4 transition-all hover:bg-gray-800/70">
                             <div class="flex-shrink-0 text-blue-400"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg></div>
                             <div>
-                                <h3 class="text-xl font-bold">Hardware & 3D Printing</h3>
-                                <p class="text-gray-400 mt-1">As Hardware Lead, I managed the integration of all electronic components onto a custom chassis, which was topped with a 3D printed shell of "Gary" designed by our team.</p>
+                                <h3 class="text-xl font-bold">Hardware and 3D Printing</h3>
+                                <p class="text-gray-400 mt-1">As Hardware Lead, I managed the integration of all electronic components, including motors, batteries, and sensors, onto a custom chassis which was topped with a 3D printed shell of "Gary" designed by our team.</p>
                             </div>
                         </div>
 
-                        <div class="bg-gray-800/50 p-6 rounded-lg flex items-start gap-4 transition-all hover:bg-gray-800/70">
+                        <div class="bg-gray-800/50 p-6 rounded-lg flex flex-col gap-4 transition-all hover:bg-gray-800/70">
                              <div class="flex-shrink-0 text-blue-400"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg></div>
                             <div>
-                                <h3 class="text-xl font-bold">Software & Control</h3>
-                                <p class="text-gray-400 mt-1">The robot's movement was programmed in C++ on an Arduino. It utilized two IR sensors to detect and follow a black line path autonomously.</p>
+                                <h3 class="text-xl font-bold">Software and Control</h3>
+                                <p class="text-gray-400 mt-1">The robot's movement was programmed in C++ on an Arduino. It uses two IR sensors that emit and detect infrared light.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-gray-800/50 p-6 rounded-lg flex flex-col gap-4 transition-all hover:bg-gray-800/70">
+                             <div class="flex-shrink-0 text-blue-400"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg></div>
+                            <div>
+                                <h3 class="text-xl font-bold">IR Sensor Logic</h3>
+                                <p class="text-gray-400 mt-1">When a sensor is over the black line, the light is absorbed and the sensor sends a LOW signal. Based on which sensor detects the line, the code adjusts the motor speeds to steer the robot and keep it centered on the path.</p>
                             </div>
                         </div>
                     </div>
